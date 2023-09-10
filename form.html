@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    
+    .input {
+        display: block;
+    }
+
+    .age {
+        display: block;
+    }
+
+    .inputs {
+        display: block;
+        padding: 2%;
+        width: 300px;
+    }
+</style>
+
+<body>
+
+    <form>
+        <h2>Creat an account</h2>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" class="input">
+        </div>
+        <br>
+        <div>
+            <label for="Password">Password</label>
+            <input type="text" id="Password" class="input">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="age">Age:</label>
+            <select name="age" id="age" class="age">
+                <option value="select age">select age</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="about him self">Tell us about your self:</label>
+            <input type="text" id="about him self" class="inputs">
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="check">
+            <label for="check">i agree to the <u style="color: blue;">terms of service</u></label>
+        </div>
+        <br>
+        <div>
+            <button>sign up</button>
+        </div>
+
+
+    </form>
+
+
+</body>
+
+</html>
