@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Box Effect</title>
+    <style>
+        body {
+            background-color: darkgrey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            margin: 0; 
+        }
+
+        .box {
+            width: 50vh;
+            height: 50vh;
+            background-color: blue;
+            position: relative;
+            overflow: hidden;
+        }
+
+        
+        .box::after {
+            content: "";
+            display: block;
+            background-color: aqua;
+            width: 100%;
+            height: 100%;
+            position: absolute; 
+            top: 0;
+            left: 100%; 
+            transition: left 1.5s ease-in-out;
+        }
+
+        
+        .box:hover::after {
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
