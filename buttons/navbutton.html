@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans:wght@300&display=swap');
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 65px;
+  margin: auto;
+  background-color: #24252a;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links a,
+li {
+  position: relative;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+li a::after {
+  content: "";
+  position: absolute;
+  background-color: #0088a9;
+  left: 0;
+  height: 3px;
+  width: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+li a:hover::after {
+  width: 100%;
+}
+
+li a::before {
+  content: "";
+  position: absolute;
+  background-color: #0088a9;
+  left: 0;
+  height: 3px;
+  width: 0;
+  top: -10px;
+  transition: 0.3s;
+}
+
+li a:hover::before {
+  width: 100%;
+}
+
+.cta {
+  position: relative;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+</style>
+<body>
+    <header>
+        <a class="logo" href="mypage.html"><img src="logo.svg" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="contact.html">Contact</a>
+    </header>
+</body>
+</html>
+
