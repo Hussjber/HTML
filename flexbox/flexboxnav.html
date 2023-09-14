@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexboxnav</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .logo {
+        font-size: medium;
+        color: rgb(4, 30, 73);
+        font-weight: bold;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+    .contanier{
+        max-width: auto;
+        margin: 0 auto ;
+        padding: 0 30px;
+    }
+    .navbar .contanier{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .navbar {
+        height: 60px;
+        background-color: gainsboro;
+        border: solid 1px rgb(166, 165, 165);
+    }
+
+    .navbar a {
+        text-decoration: none;
+        font-size: 18px;
+        color: rgb(4, 30, 73)   
+     }
+
+    .navbar ul{
+        display: flex;
+    }
+    .navbar ul li{
+        margin-left: 20px;
+    }
+
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="contanier">
+            <div class="logo">APPLESEEDS</div>
+            <ul class="nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</body>
+
+</html>
